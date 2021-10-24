@@ -8,10 +8,6 @@ namespace homework_1
     delegate int check_del(Product a, Product b);
     class Sort_class
     {
-		public static void DisplayCounter()
-		{
-			Console.WriteLine($"Создано  объектов User");
-		}
 		public static void Sort(Product[] prod_arr, check_del buble_check)
         {
 			for (int i = 1; i < prod_arr.Length; ++i)
@@ -20,7 +16,7 @@ namespace homework_1
 				{
 					if (buble_check(prod_arr[r], prod_arr[r+1])==1)
 					{
-						// Обмен местами
+						
 						Product temp = prod_arr[r];
 						prod_arr[r] = prod_arr[r + 1];
 						prod_arr[r + 1] = temp;
